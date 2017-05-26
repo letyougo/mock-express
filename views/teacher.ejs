@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="login">登录</a>
+<h3>
+    这是<%= name %>他负责以下课程
+</h3>
+<ul>
+    <% lessons.forEach(function(obj){ %>
+    <li >
+        <h3><%= obj.title %></h3>
+        <%= obj.content %>
+    </li>
+    <% }) %>
+</ul>
+</body>
+</html>
